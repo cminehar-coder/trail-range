@@ -24,6 +24,6 @@
  }
  function dominates(a,b){const e=1e-9;return a.score>=b.score-e&&a.mpg>=b.mpg&&(a.score>b.score+e||a.mpg>b.mpg);}
  function frontier(rows){const valid=rows.filter(r=>Number.isFinite(r.score)&&Number.isFinite(r.mpg));return valid.filter(a=>!valid.some(b=>a.id!==b.id&&dominates(b,a))).sort((a,b)=>a.mpg-b.mpg||b.score-a.score);}
- function eligible(v,filters){return (!filters.hybrid||v.fuel==='Hybrid')&&(!filters.gas||v.fuel==='Gasoline')&&(!filters.drive||filters.drive==='all'||(filters.drive==='low'&&v.lowRange)||(filters.drive==='rear'&&v.rearLocker)||(filters.drive==='both'&&v.frontLocker&&v.rearLocker))&&v.year>=filters.yearMin&&v.year<=filters.yearMax;}
+ function eligible(v,filters){return (!filters.hybrid||v.fuel==='Hybrid')&&(!filters.gas||v.fuel==='Gasoline')&&(!filters.drive||filters.drive==='all'||(filters.drive==='awd'&&v.drivetrain!=='Front-Wheel Drive'&&v.drivetrain!=='Rear-Wheel Drive')||(filters.drive==='low'&&v.lowRange)||(filters.drive==='rear'&&v.rearLocker)||(filters.drive==='both'&&v.frontLocker&&v.rearLocker))&&v.year>=filters.yearMin&&v.year<=filters.yearMax;}
  return {PARAMETERS,DEFAULTS,normalizedWeights,tireDiameter,estimatedBreakover,component,evaluate,dominates,frontier,eligible};
 });

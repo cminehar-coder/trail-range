@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-10-02",
-  "scope": "Selected stock U.S. configurations within model years 2015\u20132025. This seed dataset currently represents 2015, 2021, 2023 and 2024; it is not an exhaustive census or live sale inventory. Gasoline and conventional hybrids only.",
+  "scope": "Selected stock U.S. configurations within model years 2011\u20132025, including the requested 2011 Tacoma and 2013 Prius references. This seed dataset represents 2011, 2013, 2015, 2021, 2023 and 2024; it is not an exhaustive census or live sale inventory. Gasoline and conventional hybrids only.",
   "sources": {
     "rav4": {
       "title": "Toyota 2024 RAV4 U.S. brochure",
@@ -72,6 +72,41 @@
       "title": "Toyota 2024 Land Cruiser U.S. press release (manufacturer PDF, media mirror)",
       "url": "https://cdn.motor1.com/pdf-files/2024-toyota-land-cruiser-press-release-2.pdf",
       "location": "Land Cruiser grade dimensions and tires, not 1958 grade"
+    },
+    "crv": {
+      "title": "Honda 2024 CR-V U.S. specifications",
+      "url": "https://www.hondainfocenter.com/2024/CR-V/Feature-Guide/Specifications/",
+      "location": "AWD exterior measurements and tires, gas versus Sport Hybrid"
+    },
+    "hrv": {
+      "title": "Honda 2024 HR-V U.S. specifications",
+      "url": "https://www.hondainfocenter.com/2024/HR-V/Feature-Guide/Specifications/",
+      "location": "LX exterior measurements and tires"
+    },
+    "cx5": {
+      "title": "Mazda 2024 CX-5 U.S. specification deck",
+      "url": "https://filecache.mediaroom.com/mr5mr_mazdausa2/223259/download/2024%20CX-5%20Spec%20Deck.pdf",
+      "location": "Pages 12\u201313: Select tires, dimensions, production-dependent fuel economy; approach/departure not provided"
+    },
+    "ranger": {
+      "title": "Ford 2024 Ranger technical specifications (manufacturer PDF, archive mirror)",
+      "url": "https://www.ranger6g.com/forum/attachments/all-new-2024-ford-ranger-technical-specifications-051323-pdf.39117/",
+      "location": "Revised May 2023 sheet, pages 1\u20133: SuperCrew 4x4, standard tires"
+    },
+    "f150": {
+      "title": "Ford Pro 2024 F-150 technical specifications",
+      "url": "https://content.fordpro.com/content/dam/fordpro/us/en-us/pdf/showroom/trucks/f-150/2024/2024_Ford_F-150_Tech_Specs.pdf",
+      "location": "Pages 4\u20135: SuperCrew 4x4 5.5-ft bed dimensions and standard tires"
+    },
+    "tacoma2011": {
+      "title": "Toyota 2011 Tacoma U.S. brochure (manufacturer PDF, archive mirror)",
+      "url": "https://cdn.dealereprocess.org/cdn/brochures/toyota/2011-tacoma.pdf",
+      "location": "Pages 13\u201316: standard tires, 4WD hardware and Double Cab short/long-bed off-highway geometry"
+    },
+    "prius2013": {
+      "title": "Toyota 2013 Prius U.S. brochure (manufacturer PDF, archive mirror)",
+      "url": "https://www.auto-brochures.com/makes/Toyota/Prius/Toyota_US%20Prius_2013.pdf",
+      "location": "Page 17: standard Prius dimensions, drivetrain and tires; excludes Prius c, v and Plug-in"
     }
   },
   "vehicles": [
@@ -83,6 +118,7 @@
       "trim": "Hybrid LE AWD",
       "engine": "2.5 L hybrid / eCVT",
       "fuel": "Hybrid",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 39,
       "city": 41,
       "highway": 38,
@@ -128,6 +164,7 @@
       "trim": "Hybrid Woodland AWD",
       "engine": "2.5 L hybrid / eCVT",
       "fuel": "Hybrid",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 37,
       "city": 38,
       "highway": 35,
@@ -173,6 +210,7 @@
       "trim": "TRD Off-Road AWD",
       "engine": "2.5 L / 8-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 28,
       "city": 25,
       "highway": 32,
@@ -218,6 +256,7 @@
       "trim": "Base AWD",
       "engine": "2.0 L / CVT",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 29,
       "city": 27,
       "highway": 34,
@@ -263,6 +302,7 @@
       "trim": "Wilderness AWD",
       "engine": "2.5 L / CVT",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 27,
       "city": 25,
       "highway": 29,
@@ -308,6 +348,7 @@
       "trim": "Wilderness AWD",
       "engine": "2.5 L / CVT",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 26,
       "city": 25,
       "highway": 28,
@@ -349,6 +390,7 @@
       "trim": "Base AWD",
       "engine": "2.5 L / CVT",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 28,
       "city": 26,
       "highway": 32,
@@ -394,6 +436,7 @@
       "trim": "Wilderness AWD",
       "engine": "2.4 L turbo / CVT",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 23,
       "city": 21,
       "highway": 26,
@@ -439,6 +482,7 @@
       "trim": "Base \u00b7 2-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 21,
       "city": 20,
       "highway": 22,
@@ -480,6 +524,7 @@
       "trim": "Base \u00b7 4-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 21,
       "city": 20,
       "highway": 22,
@@ -521,6 +566,7 @@
       "trim": "Base Sasquatch \u00b7 2-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 18,
       "highway": 18,
@@ -562,6 +608,7 @@
       "trim": "Base Sasquatch \u00b7 4-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 18,
       "highway": 18,
@@ -603,6 +650,7 @@
       "trim": "Base AWD",
       "engine": "1.5 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
       "mpg": 26,
       "city": 25,
       "highway": 28,
@@ -644,6 +692,7 @@
       "trim": "Badlands \u00b7 optional A/T tires",
       "engine": "2.0 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 23,
       "city": 21,
       "highway": 26,
@@ -685,6 +734,7 @@
       "trim": "Rubicon \u00b7 2-door",
       "engine": "3.6 L V6 / 6-speed manual",
       "fuel": "Gasoline",
+      "drivetrain": "4-Wheel Drive",
       "mpg": 20,
       "city": 17,
       "highway": 25,
@@ -726,6 +776,7 @@
       "trim": "Rubicon \u00b7 4-door",
       "engine": "3.6 L V6 / 6-speed manual",
       "fuel": "Gasoline",
+      "drivetrain": "4-Wheel Drive",
       "mpg": 19,
       "city": 17,
       "highway": 23,
@@ -767,6 +818,7 @@
       "trim": "Sport \u00b7 2-door",
       "engine": "2.0 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "4-Wheel Drive",
       "mpg": 23,
       "city": 22,
       "highway": 24,
@@ -808,6 +860,7 @@
       "trim": "Sport \u00b7 4-door",
       "engine": "2.0 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "4-Wheel Drive",
       "mpg": 22,
       "city": 21,
       "highway": 24,
@@ -849,6 +902,7 @@
       "trim": "Trail 4WD",
       "engine": "4.0 L V6 / 5-speed automatic",
       "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 17,
       "highway": 21,
@@ -890,6 +944,7 @@
       "trim": "TRD Pro \u00b7 Double Cab, 5-ft bed",
       "engine": "2.4 L hybrid / 8-speed automatic",
       "fuel": "Hybrid",
+      "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 23,
       "city": 22,
       "highway": 24,
@@ -932,6 +987,7 @@
       "trim": "Land Cruiser grade \u00b7 18-in wheels",
       "engine": "2.4 L hybrid / 8-speed automatic",
       "fuel": "Hybrid",
+      "drivetrain": "4-Wheel Drive",
       "mpg": 23,
       "city": 22,
       "highway": 25,
@@ -963,6 +1019,384 @@
         "mpg": {
           "title": "EPA #47762: 2024 Land Cruiser, 2.4 L, Automatic (S8)",
           "url": "https://www.fueleconomy.gov/feg/noframes/47762.shtml"
+        }
+      }
+    },
+    {
+      "id": "crv-gas",
+      "year": 2024,
+      "make": "Honda",
+      "model": "CR-V",
+      "trim": "LX AWD",
+      "engine": "1.5 L turbo / CVT",
+      "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 29,
+      "city": 27,
+      "highway": 32,
+      "epaId": "46715",
+      "epaModel": "CR-V AWD",
+      "epaTransmission": "Automatic (variable gear ratios)",
+      "clearance": 8.2,
+      "approach": 17.7,
+      "departure": 22.1,
+      "breakover": null,
+      "wheelbase": 106.3,
+      "tireSize": "235/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Published breakover not located. Gas-model bumper geometry differs from Sport Hybrid.",
+      "short": "CR-V LX AWD",
+      "sources": {
+        "geometry": [
+          "crv"
+        ],
+        "tires": [
+          "crv"
+        ],
+        "hardware": [
+          "crv"
+        ],
+        "mpg": {
+          "title": "EPA #46715: 2024 CR-V AWD, 1.5 L, Automatic (variable gear ratios)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/46715.shtml"
+        }
+      }
+    },
+    {
+      "id": "crv-hybrid",
+      "year": 2024,
+      "make": "Honda",
+      "model": "CR-V",
+      "trim": "Sport Hybrid AWD",
+      "engine": "2.0 L hybrid / eCVT",
+      "fuel": "Hybrid",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 37,
+      "city": 40,
+      "highway": 34,
+      "epaId": "46716",
+      "epaModel": "CR-V AWD",
+      "epaTransmission": "Automatic (variable gear ratios)",
+      "clearance": 8.2,
+      "approach": 16.1,
+      "departure": 16,
+      "breakover": null,
+      "wheelbase": 106.3,
+      "tireSize": "235/60R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Published breakover not located. Uses Honda Sport Hybrid AWD approach/departure values, not the gas trim values.",
+      "short": "CR-V Hybrid AWD",
+      "sources": {
+        "geometry": [
+          "crv"
+        ],
+        "tires": [
+          "crv"
+        ],
+        "hardware": [
+          "crv"
+        ],
+        "mpg": {
+          "title": "EPA #46716: 2024 CR-V AWD, 2.0 L, Automatic (variable gear ratios)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/46716.shtml"
+        }
+      }
+    },
+    {
+      "id": "hrv",
+      "year": 2024,
+      "make": "Honda",
+      "model": "HR-V",
+      "trim": "LX AWD",
+      "engine": "2.0 L / CVT",
+      "fuel": "Gasoline",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 27,
+      "city": 25,
+      "highway": 30,
+      "epaId": "46587",
+      "epaModel": "HR-V AWD",
+      "epaTransmission": "Automatic (variable gear ratios)",
+      "clearance": 7,
+      "approach": 15.5,
+      "departure": 20.5,
+      "breakover": null,
+      "wheelbase": 104.5,
+      "tireSize": "215/60R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Published breakover not located.",
+      "short": "HR-V LX AWD",
+      "sources": {
+        "geometry": [
+          "hrv"
+        ],
+        "tires": [
+          "hrv"
+        ],
+        "hardware": [
+          "hrv"
+        ],
+        "mpg": {
+          "title": "EPA #46587: 2024 HR-V AWD, 2.0 L, Automatic (variable gear ratios)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/46587.shtml"
+        }
+      }
+    },
+    {
+      "id": "cx5",
+      "year": 2024,
+      "make": "Mazda",
+      "model": "CX-5",
+      "trim": "2.5 S Select AWD \u00b7 with i-stop/CDA",
+      "engine": "2.5 L / 6-speed automatic",
+      "fuel": "Gasoline",
+      "drivetrain": "4-Wheel Drive",
+      "mpg": 28,
+      "city": 26,
+      "highway": 31,
+      "epaId": "47152",
+      "epaModel": "CX-5 4WD",
+      "epaTransmission": "Automatic (S6)",
+      "clearance": 7.6,
+      "approach": null,
+      "departure": null,
+      "breakover": null,
+      "wheelbase": 106.2,
+      "tireSize": "225/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "28 MPG applies to the engine WITH cylinder deactivation and i-stop; some 2024 production omitted them and is rated 25 MPG. U.S. approach/departure specifications not located; left missing rather than substituting Canadian-market angles. Choose the Known dimensions preset to include this vehicle in scoring.",
+      "short": "CX-5 Select AWD",
+      "sources": {
+        "geometry": [
+          "cx5"
+        ],
+        "tires": [
+          "cx5"
+        ],
+        "hardware": [
+          "cx5"
+        ],
+        "mpg": {
+          "title": "EPA #47152: 2024 CX-5 4WD, 2.5 L, Automatic (S6)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47152.shtml"
+        }
+      }
+    },
+    {
+      "id": "ranger",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Ranger",
+      "trim": "XL 4WD \u00b7 SuperCrew, 5-ft bed",
+      "engine": "2.3 L turbo / 10-speed automatic",
+      "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
+      "mpg": 22,
+      "city": 20,
+      "highway": 24,
+      "epaId": "47370",
+      "epaModel": "Ranger 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 9.3,
+      "approach": 30.2,
+      "departure": 25.8,
+      "breakover": 23,
+      "wheelbase": 128.7,
+      "tireSize": "255/70R17",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard tires; optional rear locker and FX4 package are not assumed. Revised manufacturer launch sheet, not the earlier 10.4-inch-clearance version.",
+      "short": "Ranger XL 4WD",
+      "sources": {
+        "geometry": [
+          "ranger"
+        ],
+        "tires": [
+          "ranger"
+        ],
+        "hardware": [
+          "ranger"
+        ],
+        "mpg": {
+          "title": "EPA #47370: 2024 Ranger 4WD, 2.3 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47370.shtml"
+        }
+      }
+    },
+    {
+      "id": "f150",
+      "year": 2024,
+      "make": "Ford",
+      "model": "F-150",
+      "trim": "XL 4WD \u00b7 SuperCrew, 5.5-ft bed",
+      "engine": "2.7 L turbo / 10-speed automatic",
+      "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
+      "mpg": 20,
+      "city": 18,
+      "highway": 23,
+      "epaId": "47611",
+      "epaModel": "F150 Pickup 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 9.4,
+      "approach": 24.3,
+      "departure": 25.3,
+      "breakover": 20,
+      "wheelbase": 145.4,
+      "tireSize": "245/70R17",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard tire size and no optional axle locker assumed. Geometry follows the linked Ford Pro 2024 sheet; other Ford sheet revisions differ. EPA powertrain group is not a separate cab/bed/axle test.",
+      "short": "F-150 XL 4WD",
+      "sources": {
+        "geometry": [
+          "f150"
+        ],
+        "tires": [
+          "f150"
+        ],
+        "hardware": [
+          "f150"
+        ],
+        "mpg": {
+          "title": "EPA #47611: 2024 F150 Pickup 4WD, 2.7 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47611.shtml"
+        }
+      }
+    },
+    {
+      "id": "tacoma-2011-5-ft",
+      "year": 2011,
+      "make": "Toyota",
+      "model": "Tacoma",
+      "trim": "Base 4WD \u00b7 Double Cab, 5-ft bed",
+      "engine": "4.0 L V6 / 5-speed automatic",
+      "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
+      "mpg": 18,
+      "city": 16,
+      "highway": 20,
+      "epaId": "30451",
+      "epaModel": "Tacoma 4WD",
+      "epaTransmission": "Automatic 5-spd",
+      "clearance": 9.3,
+      "approach": 35,
+      "departure": 26,
+      "breakover": 21,
+      "wheelbase": 127.4,
+      "tireSize": "245/75R16",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard 4WD configuration and tires; TRD package or rear locker not assumed. EPA groups cab/bed configurations. Both Double Cab bed lengths are included because the requested bed length was unspecified.",
+      "short": "2011 Tacoma 5-ft",
+      "sources": {
+        "geometry": [
+          "tacoma2011"
+        ],
+        "tires": [
+          "tacoma2011"
+        ],
+        "hardware": [
+          "tacoma2011"
+        ],
+        "mpg": {
+          "title": "EPA #30451: 2011 Tacoma 4WD, 4.0 L, Automatic 5-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/30451.shtml"
+        }
+      }
+    },
+    {
+      "id": "tacoma-2011-6-ft",
+      "year": 2011,
+      "make": "Toyota",
+      "model": "Tacoma",
+      "trim": "Base 4WD \u00b7 Double Cab, 6-ft bed",
+      "engine": "4.0 L V6 / 5-speed automatic",
+      "fuel": "Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
+      "mpg": 18,
+      "city": 16,
+      "highway": 20,
+      "epaId": "30451",
+      "epaModel": "Tacoma 4WD",
+      "epaTransmission": "Automatic 5-spd",
+      "clearance": 9.3,
+      "approach": 35,
+      "departure": 25,
+      "breakover": 20,
+      "wheelbase": 140.6,
+      "tireSize": "245/75R16",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard 4WD configuration and tires; TRD package or rear locker not assumed. EPA groups cab/bed configurations. Both Double Cab bed lengths are included because the requested bed length was unspecified.",
+      "short": "2011 Tacoma 6-ft",
+      "sources": {
+        "geometry": [
+          "tacoma2011"
+        ],
+        "tires": [
+          "tacoma2011"
+        ],
+        "hardware": [
+          "tacoma2011"
+        ],
+        "mpg": {
+          "title": "EPA #30451: 2011 Tacoma 4WD, 4.0 L, Automatic 5-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/30451.shtml"
+        }
+      }
+    },
+    {
+      "id": "prius-2013",
+      "year": 2013,
+      "make": "Toyota",
+      "model": "Prius",
+      "trim": "Two FWD \u00b7 efficiency reference",
+      "engine": "1.8 L hybrid / eCVT",
+      "fuel": "Hybrid",
+      "drivetrain": "Front-Wheel Drive",
+      "mpg": 48,
+      "city": 49,
+      "highway": 46,
+      "epaId": "33324",
+      "epaModel": "Prius",
+      "epaTransmission": "Automatic (variable gear ratios)",
+      "clearance": 5.3,
+      "approach": null,
+      "departure": null,
+      "breakover": null,
+      "wheelbase": 106.3,
+      "tireSize": "195/65R15",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Front-wheel-drive efficiency reference, not an AWD/4WD vehicle. Current EPA adjusted combined rating is 48 MPG; the original brochure stated 50. Published approach/departure angles not located. Choose Known dimensions to compare using clearance, tire diameter and wheelbase, or set missing angles to zero weight.",
+      "short": "2013 Prius FWD",
+      "sources": {
+        "geometry": [
+          "prius2013"
+        ],
+        "tires": [
+          "prius2013"
+        ],
+        "hardware": [
+          "prius2013"
+        ],
+        "mpg": {
+          "title": "EPA #33324: 2013 Prius, 1.8 L, Automatic (variable gear ratios)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/33324.shtml"
         }
       }
     }

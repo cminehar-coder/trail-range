@@ -250,5 +250,113 @@
     "comb08": "23",
     "city08": "22",
     "highway08": "25"
+  },
+  {
+    "id": "46715",
+    "year": "2024",
+    "make": "Honda",
+    "model": "CR-V AWD",
+    "displ": "1.5",
+    "trany": "Automatic (variable gear ratios)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "29",
+    "city08": "27",
+    "highway08": "32"
+  },
+  {
+    "id": "46716",
+    "year": "2024",
+    "make": "Honda",
+    "model": "CR-V AWD",
+    "displ": "2.0",
+    "trany": "Automatic (variable gear ratios)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "37",
+    "city08": "40",
+    "highway08": "34"
+  },
+  {
+    "id": "46587",
+    "year": "2024",
+    "make": "Honda",
+    "model": "HR-V AWD",
+    "displ": "2.0",
+    "trany": "Automatic (variable gear ratios)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "27",
+    "city08": "25",
+    "highway08": "30"
+  },
+  {
+    "id": "47152",
+    "year": "2024",
+    "make": "Mazda",
+    "model": "CX-5 4WD",
+    "displ": "2.5",
+    "trany": "Automatic (S6)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "28",
+    "city08": "26",
+    "highway08": "31"
+  },
+  {
+    "id": "47370",
+    "year": "2024",
+    "make": "Ford",
+    "model": "Ranger 4WD",
+    "displ": "2.3",
+    "trany": "Automatic (S10)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "22",
+    "city08": "20",
+    "highway08": "24"
+  },
+  {
+    "id": "47611",
+    "year": "2024",
+    "make": "Ford",
+    "model": "F150 Pickup 4WD",
+    "displ": "2.7",
+    "trany": "Automatic (S10)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "20",
+    "city08": "18",
+    "highway08": "23"
+  },
+  {
+    "id": "30451",
+    "year": "2011",
+    "make": "Toyota",
+    "model": "Tacoma 4WD",
+    "displ": "4.0",
+    "trany": "Automatic 5-spd",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "18",
+    "city08": "16",
+    "highway08": "20"
+  },
+  {
+    "id": "30451",
+    "year": "2011",
+    "make": "Toyota",
+    "model": "Tacoma 4WD",
+    "displ": "4.0",
+    "trany": "Automatic 5-spd",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "18",
+    "city08": "16",
+    "highway08": "20"
+  },
+  {
+    "id": "33324",
+    "year": "2013",
+    "make": "Toyota",
+    "model": "Prius",
+    "displ": "1.8",
+    "trany": "Automatic (variable gear ratios)",
+    "fuelType1": "Regular Gasoline",
+    "comb08": "48",
+    "city08": "49",
+    "highway08": "46"
   }
 ]

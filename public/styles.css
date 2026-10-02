@@ -8,3 +8,5 @@
 @media(max-width:440px){.brand-symbol{display:none}.masthead{gap:12px}.intro h1{font-size:42px}.chart-top{flex-direction:column;align-items:flex-start}.detail-columns{grid-template-columns:1fr}.contributions{display:block}.weight-head{flex-direction:column;gap:7px}.weight-number input{width:45px}.weight-number output{width:35px;font-size:10px}.detail-heading{gap:10px}.detail-heading h2{font-size:24px}.detail-score strong{font-size:30px}.table-tools{align-items:flex-start}.sort-label{gap:6px}.sort-label select{width:123px}.legend{gap:8px 12px}.chart-footer{gap:8px}#chart text{font-size:10px}.control-note{font-size:11px}}
 .method-grid>div{min-width:0}.bounds-table td:first-child{min-width:0}.bounds-table th,.bounds-table td{white-space:normal}.formula{overflow-wrap:anywhere}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.unscored-references{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.reference-button{background:#f4f0e6;border:1px dashed #9c9c8c;border-radius:6px;padding:8px 10px;color:#384b47;font:inherit;font-size:12px;cursor:pointer;text-align:left}
