@@ -11,7 +11,7 @@
  const DEFAULTS=Object.fromEntries(PARAMETERS.map(p=>[p.key,p.weight]));
  const clamp=(x,lo,hi)=>Math.min(hi,Math.max(lo,x));
  function normalizedWeights(weights){const clean=Object.fromEntries(PARAMETERS.map(p=>[p.key,Number.isFinite(+weights[p.key])?clamp(+weights[p.key],0,100):0]));const total=Object.values(clean).reduce((a,b)=>a+b,0);return Object.fromEntries(PARAMETERS.map(p=>[p.key,total?clean[p.key]/total:0]));}
- function tireDiameter(size){const m=String(size).match(/(?:LT|P)?(\d{3})\/(\d{2})R(\d{2})/i);return m?+m[3]+2*(+m[1])*(+m[2]/100)/25.4:null;}
+ function tireDiameter(size){const f=String(size).match(/^(\d+(?:\.\d+)?)x\d+(?:\.\d+)?R\d+/i);if(f)return +f[1];const m=String(size).match(/(?:LT|P)?(\d{3})\/(\d{2})R(\d{2})/i);return m?+m[3]+2*(+m[1])*(+m[2]/100)/25.4:null;}
  function estimatedBreakover(clearance,wheelbase){return 2*Math.atan(2*clearance/wheelbase)*180/Math.PI;}
  function component(value,p){if(!Number.isFinite(value))return null;const n=clamp((value-p.min)/(p.max-p.min),0,1);return (p.inverse?1-n:n)*100;}
  function evaluate(vehicle,weights,allowEstimates=true){
@@ -22,8 +22,9 @@
   if(components.some(c=>c.weight>0&&c.normalized==null))return {score:null,components,estimated,reason:'Missing a positively weighted dimension.'};
   return {score:components.reduce((sum,c)=>sum+(c.weight>0?c.contribution:0),0),components,estimated,reason:null};
  }
- function dominates(a,b){const e=1e-9;return a.score>=b.score-e&&a.mpg>=b.mpg&&(a.score>b.score+e||a.mpg>b.mpg);}
- function frontier(rows){const valid=rows.filter(r=>Number.isFinite(r.score)&&Number.isFinite(r.mpg));return valid.filter(a=>!valid.some(b=>a.id!==b.id&&dominates(b,a))).sort((a,b)=>a.mpg-b.mpg||b.score-a.score);}
- function eligible(v,filters){return (!filters.hybrid||v.fuel==='Hybrid')&&(!filters.gas||v.fuel==='Gasoline')&&(!filters.drive||filters.drive==='all'||(filters.drive==='awd'&&v.drivetrain!=='Front-Wheel Drive'&&v.drivetrain!=='Rear-Wheel Drive')||(filters.drive==='low'&&v.lowRange)||(filters.drive==='rear'&&v.rearLocker)||(filters.drive==='both'&&v.frontLocker&&v.rearLocker))&&v.year>=filters.yearMin&&v.year<=filters.yearMax;}
- return {PARAMETERS,DEFAULTS,normalizedWeights,tireDiameter,estimatedBreakover,component,evaluate,dominates,frontier,eligible};
+ function energyCost(v,gas,electricity){return v.fuel==='Electric'?v.kwhPer100Miles*electricity:100/v.mpg*gas;}
+ function dominates(a,b,metric='mpg'){const e=1e-9, av=metric==='cost'?-a.cost:a.mpg,bv=metric==='cost'?-b.cost:b.mpg;return a.score>=b.score-e&&av>=bv-e&&(a.score>b.score+e||av>bv+e);}
+ function frontier(rows,metric='mpg'){const valid=rows.filter(r=>Number.isFinite(r.score)&&Number.isFinite(r[metric]));return valid.filter(a=>!valid.some(b=>a.id!==b.id&&dominates(b,a,metric))).sort((a,b)=>a[metric]-b[metric]||b.score-a.score);}
+ function eligible(v,filters){return (!filters.electric||v.fuel==='Electric')&&(!filters.combustion||v.fuel!=='Electric')&&(!filters.hybrid||v.fuel==='Hybrid')&&(!filters.gas||v.fuel==='Gasoline')&&(!filters.drive||filters.drive==='all'||(filters.drive==='awd'&&v.drivetrain!=='Front-Wheel Drive'&&v.drivetrain!=='Rear-Wheel Drive')||(filters.drive==='low'&&v.lowRange)||(filters.drive==='rear'&&v.rearLocker)||(filters.drive==='both'&&v.frontLocker&&v.rearLocker))&&v.year>=filters.yearMin&&v.year<=filters.yearMax;}
+ return {PARAMETERS,DEFAULTS,normalizedWeights,tireDiameter,estimatedBreakover,component,evaluate,energyCost,dominates,frontier,eligible};
 });

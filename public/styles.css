@@ -10,3 +10,7 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
 .unscored-references{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.reference-button{background:#f4f0e6;border:1px dashed #9c9c8c;border-radius:6px;padding:8px 10px;color:#384b47;font:inherit;font-size:12px;cursor:pointer;text-align:left}
+
+.price-panel{padding:24px}.price-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.price-fields label{font-size:12px;display:grid;gap:6px}.price-fields input{width:100%;min-width:0;padding:10px;border:1px solid #cbd1c8;border-radius:6px;background:#fffefa}.price-fields select{min-width:0;width:100%}@media(max-width:480px){.price-fields{grid-template-columns:1fr}.price-panel{padding:18px}}
+
+@media(max-width:440px){.detail-heading{flex-wrap:wrap}.detail-score{text-align:left}.results,.workspace>*{min-width:0}.sort-label{flex-wrap:wrap}}

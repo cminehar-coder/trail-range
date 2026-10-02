@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "updated": "2026-10-02",
-  "scope": "Selected stock U.S. configurations within model years 2011\u20132025, including the requested 2011 Tacoma and 2013 Prius references. This seed dataset represents 2011, 2013, 2015, 2021, 2023 and 2024; it is not an exhaustive census or live sale inventory. Gasoline and conventional hybrids only.",
+  "scope": "Selected stock U.S. configurations from model year 2010 through current offerings, including the EPA-rated 2027 Rivian R2. This is a curated comparison, not every model/trim/year or a live inventory. Gasoline, conventional hybrids and battery EVs; no diesels or plug-in hybrids. R2 is the production SUV name; no production R2T pickup found.",
   "sources": {
     "rav4": {
       "title": "Toyota 2024 RAV4 U.S. brochure",
@@ -107,6 +107,111 @@
       "title": "Toyota 2013 Prius U.S. brochure (manufacturer PDF, archive mirror)",
       "url": "https://www.auto-brochures.com/makes/Toyota/Prius/Toyota_US%20Prius_2013.pdf",
       "location": "Page 17: standard Prius dimensions, drivetrain and tires; excludes Prius c, v and Plug-in"
+    },
+    "r1t2025": {
+      "title": "Rivian R1T Upfitting Guide, September 2025",
+      "url": "https://assets.ctfassets.net/2md5qhoeajym/5ysf6K5UtGtHedY1fMeClC/b83307f7e8f03838a1906bff88707f95/r1t-upfitting-guide-en-us-20250924.pdf",
+      "location": "Page 29: 34-inch tire geometry at Highest/Max suspension setting"
+    },
+    "r1s2025": {
+      "title": "Rivian R1S manufacturer comparison specifications",
+      "url": "https://rivian.com/compare?a=r1s-dual-standard",
+      "location": "Gen 2 maximum clearance, approach/departure and wheelbase; breakover not supplied"
+    },
+    "r1sTires": {
+      "title": "Rivian R1S Model Year 2025 owner guide",
+      "url": "https://assets.rivian.com/2md5qhoeajym/7aH3Lwf2vJJvjhklXorrga/e52c521f954216eb3358824f5e6b12d7/r1s-og-my25-en-us-20240722.pdf",
+      "location": "275/65R20 all-terrain wheel package and ride-height settings"
+    },
+    "r2": {
+      "title": "Rivian R2 production specifications",
+      "url": "https://rivian.com/r2",
+      "location": "Size it up: clearance, approach, departure, breakover and wheelbase"
+    },
+    "r2Tires": {
+      "title": "Rivian R2 MY2027 owner guide (manufacturer PDF, archive mirror)",
+      "url": "https://rivianforums.com/forum/attachments/r2-my27-og-en-us-2026200-pdf.158137/",
+      "location": "20-inch tire size: 255/60R20"
+    },
+    "model3": {
+      "title": "Tesla Model 3 2024+ U.S. owner manual: dimensions",
+      "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-56562137-FC31-4110-A13C-9A9FC6657BF0.html",
+      "location": "Long Range dimensions; approach/departure not published"
+    },
+    "model3Tires": {
+      "title": "Tesla Model 3 U.S. owner manual: wheels and tires",
+      "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-FDDB10EF-FFA9-46EB-B8CC-03614AE92B6B.html",
+      "location": "18-inch wheels: 235/45R18"
+    },
+    "modely": {
+      "title": "Tesla Model Y 2020\u20132024 U.S. owner manual: dimensions",
+      "url": "https://www.tesla.com/ownersmanual/2020_2024_modely/en_us/GUID-E47C4A6D-528E-419C-8C57-FD3864644C34.html",
+      "location": "Non-Performance ground clearance with TWO PASSENGERS; approach/departure not published"
+    },
+    "modelyTires": {
+      "title": "Tesla Model Y 2020\u20132024 U.S. owner manual: tires",
+      "url": "https://www.tesla.com/ownersmanual/2020_2024_modely/en_us/GUID-FDDB10EF-FFA9-46EB-B8CC-03614AE92B6B.html",
+      "location": "19-inch Gemini tire specification"
+    },
+    "cybertruck": {
+      "title": "Tesla Cybertruck Off-Road Guide v2024.14.3",
+      "url": "https://service.tesla.com/docs/Cybertruck/cybertruck_offroad_guide.pdf",
+      "location": "Page 22: Very High suspension, not Extract; page 15: AWD front/rear mechanical lockers"
+    },
+    "cyberTires": {
+      "title": "Tesla Cybertruck wheel and tire specifications",
+      "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9284C9F2-A2F2-4604-83BF-6599F47766B7.html",
+      "location": "20-inch wheel packages use 285/65R20; EPA record groups options"
+    },
+    "lightning": {
+      "title": "Ford 2025 F-150 Lightning technical specifications",
+      "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2025/specs/2025-Ford-F-150-Lightning-Technical-Specifications.pdf",
+      "location": "Exterior dimensions table (manufacturer labels preproduction estimates)"
+    },
+    "lightningTires": {
+      "title": "Ford 2025 F-150 Lightning order guide",
+      "url": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2025/order-guides/2025_F-150_Lightning_Order_Guide.pdf",
+      "location": "Pro 18-inch tires and equipment"
+    },
+    "ioniq": {
+      "title": "Hyundai 2025 IONIQ 5 U.S. launch specifications",
+      "url": "https://www.prnewswire.com/news-releases/hyundai-debuts-us-built-2025-ioniq-5-range-including-new-adventure-ready-xrt-302235559.html",
+      "location": "XRT approach/departure and 235/60R18 tires"
+    },
+    "ioniqDimensions": {
+      "title": "Hyundai 2025 IONIQ 5 XRT specifications",
+      "url": "https://www.hyundaiusa.com/us/en/vehicles/2025-ioniq-5/xrt",
+      "location": "7.0-inch clearance and 118.1-inch wheelbase"
+    },
+    "solterra2025": {
+      "title": "Subaru 2025 Solterra U.S. brochure (manufacturer PDF, dealer mirror)",
+      "url": "https://www.romainsubaru.com/static/brand-subaru/Custom_Pages/2025/Solterra/PDF/MY25-Solterra-Brochure.pdf",
+      "location": "Premium tires and dimensions diagram: 8.3-in clearance, 17.7/18.2/25.4-degree geometry"
+    },
+    "solterra2026": {
+      "title": "Subaru 2026 Solterra U.S. brochure",
+      "url": "https://www.subaru.com/content/dam/subaru/downloads/pdf/brochures/2026/2026_Solterra_Brochure_010826.pdf",
+      "location": "Dimensions diagram; Premium stock configuration"
+    },
+    "solterraTires": {
+      "title": "Subaru 2026 Solterra U.S. specifications by trim",
+      "url": "https://www.subaru.com/vehicles/solterra/2026/specs-trim.html",
+      "location": "Premium 235/60R18 tires"
+    },
+    "tacoma2010": {
+      "title": "Toyota 2010 Tacoma U.S. Access Cab eBrochure (manufacturer PDF, archive mirror)",
+      "url": "https://www.auto-brochures.com/makes/Toyota/Tacoma/Toyota_US%20Tacoma_2010.pdf",
+      "location": "Page 9: Access Cab 4WD dimensions and tires; values transcribed from this specific brochure"
+    },
+    "renegade": {
+      "title": "Jeep 2020 Renegade U.S. specifications",
+      "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2020_JP_Renegade_SPub4fd9655ic1r434o7nskd3oj5.pdf",
+      "location": "Dimensions page 5; Trailhawk tires page 8"
+    },
+    "broncoRaptor": {
+      "title": "Ford 2022 Bronco Raptor technical specifications (manufacturer PDF, archive mirror)",
+      "url": "https://www.broncoiicorral.com/wp-content/uploads/2022/02/2022-Ford-Bronco-Raptor-Tech-Specs.pdf",
+      "location": "Suspension, axles, tires and dimensions tables; launch specifications"
     }
   },
   "vehicles": [
@@ -118,6 +223,10 @@
       "trim": "Hybrid LE AWD",
       "engine": "2.5 L hybrid / eCVT",
       "fuel": "Hybrid",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 39,
       "city": 41,
@@ -164,6 +273,10 @@
       "trim": "Hybrid Woodland AWD",
       "engine": "2.5 L hybrid / eCVT",
       "fuel": "Hybrid",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 37,
       "city": 38,
@@ -210,6 +323,10 @@
       "trim": "TRD Off-Road AWD",
       "engine": "2.5 L / 8-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 28,
       "city": 25,
@@ -256,6 +373,10 @@
       "trim": "Base AWD",
       "engine": "2.0 L / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 29,
       "city": 27,
@@ -302,6 +423,10 @@
       "trim": "Wilderness AWD",
       "engine": "2.5 L / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 27,
       "city": 25,
@@ -348,6 +473,10 @@
       "trim": "Wilderness AWD",
       "engine": "2.5 L / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 26,
       "city": 25,
@@ -390,6 +519,10 @@
       "trim": "Base AWD",
       "engine": "2.5 L / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 28,
       "city": 26,
@@ -436,6 +569,10 @@
       "trim": "Wilderness AWD",
       "engine": "2.4 L turbo / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 23,
       "city": 21,
@@ -482,6 +619,10 @@
       "trim": "Base \u00b7 2-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 21,
       "city": 20,
@@ -524,6 +665,10 @@
       "trim": "Base \u00b7 4-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 21,
       "city": 20,
@@ -566,6 +711,10 @@
       "trim": "Base Sasquatch \u00b7 2-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 18,
@@ -608,6 +757,10 @@
       "trim": "Base Sasquatch \u00b7 4-door",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 18,
@@ -650,6 +803,10 @@
       "trim": "Base AWD",
       "engine": "1.5 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 26,
       "city": 25,
@@ -692,6 +849,10 @@
       "trim": "Badlands \u00b7 optional A/T tires",
       "engine": "2.0 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 23,
       "city": 21,
@@ -734,6 +895,10 @@
       "trim": "Rubicon \u00b7 2-door",
       "engine": "3.6 L V6 / 6-speed manual",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "4-Wheel Drive",
       "mpg": 20,
       "city": 17,
@@ -776,6 +941,10 @@
       "trim": "Rubicon \u00b7 4-door",
       "engine": "3.6 L V6 / 6-speed manual",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "4-Wheel Drive",
       "mpg": 19,
       "city": 17,
@@ -818,6 +987,10 @@
       "trim": "Sport \u00b7 2-door",
       "engine": "2.0 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "4-Wheel Drive",
       "mpg": 23,
       "city": 22,
@@ -860,6 +1033,10 @@
       "trim": "Sport \u00b7 4-door",
       "engine": "2.0 L turbo / 8-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "4-Wheel Drive",
       "mpg": 22,
       "city": 21,
@@ -902,6 +1079,10 @@
       "trim": "Trail 4WD",
       "engine": "4.0 L V6 / 5-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 17,
@@ -944,6 +1125,10 @@
       "trim": "TRD Pro \u00b7 Double Cab, 5-ft bed",
       "engine": "2.4 L hybrid / 8-speed automatic",
       "fuel": "Hybrid",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 23,
       "city": 22,
@@ -987,6 +1172,10 @@
       "trim": "Land Cruiser grade \u00b7 18-in wheels",
       "engine": "2.4 L hybrid / 8-speed automatic",
       "fuel": "Hybrid",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Premium Gasoline",
       "drivetrain": "4-Wheel Drive",
       "mpg": 23,
       "city": 22,
@@ -1030,6 +1219,10 @@
       "trim": "LX AWD",
       "engine": "1.5 L turbo / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 29,
       "city": 27,
@@ -1072,6 +1265,10 @@
       "trim": "Sport Hybrid AWD",
       "engine": "2.0 L hybrid / eCVT",
       "fuel": "Hybrid",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 37,
       "city": 40,
@@ -1114,6 +1311,10 @@
       "trim": "LX AWD",
       "engine": "2.0 L / CVT",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "All-Wheel Drive",
       "mpg": 27,
       "city": 25,
@@ -1149,48 +1350,6 @@
       }
     },
     {
-      "id": "cx5",
-      "year": 2024,
-      "make": "Mazda",
-      "model": "CX-5",
-      "trim": "2.5 S Select AWD \u00b7 with i-stop/CDA",
-      "engine": "2.5 L / 6-speed automatic",
-      "fuel": "Gasoline",
-      "drivetrain": "4-Wheel Drive",
-      "mpg": 28,
-      "city": 26,
-      "highway": 31,
-      "epaId": "47152",
-      "epaModel": "CX-5 4WD",
-      "epaTransmission": "Automatic (S6)",
-      "clearance": 7.6,
-      "approach": null,
-      "departure": null,
-      "breakover": null,
-      "wheelbase": 106.2,
-      "tireSize": "225/65R17",
-      "lowRange": false,
-      "rearLocker": false,
-      "frontLocker": false,
-      "notes": "28 MPG applies to the engine WITH cylinder deactivation and i-stop; some 2024 production omitted them and is rated 25 MPG. U.S. approach/departure specifications not located; left missing rather than substituting Canadian-market angles. Choose the Known dimensions preset to include this vehicle in scoring.",
-      "short": "CX-5 Select AWD",
-      "sources": {
-        "geometry": [
-          "cx5"
-        ],
-        "tires": [
-          "cx5"
-        ],
-        "hardware": [
-          "cx5"
-        ],
-        "mpg": {
-          "title": "EPA #47152: 2024 CX-5 4WD, 2.5 L, Automatic (S6)",
-          "url": "https://www.fueleconomy.gov/feg/noframes/47152.shtml"
-        }
-      }
-    },
-    {
       "id": "ranger",
       "year": 2024,
       "make": "Ford",
@@ -1198,6 +1357,10 @@
       "trim": "XL 4WD \u00b7 SuperCrew, 5-ft bed",
       "engine": "2.3 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 22,
       "city": 20,
@@ -1240,6 +1403,10 @@
       "trim": "XL 4WD \u00b7 SuperCrew, 5.5-ft bed",
       "engine": "2.7 L turbo / 10-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 20,
       "city": 18,
@@ -1282,6 +1449,10 @@
       "trim": "Base 4WD \u00b7 Double Cab, 5-ft bed",
       "engine": "4.0 L V6 / 5-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 16,
@@ -1324,6 +1495,10 @@
       "trim": "Base 4WD \u00b7 Double Cab, 6-ft bed",
       "engine": "4.0 L V6 / 5-speed automatic",
       "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
       "drivetrain": "Part-time 4-Wheel Drive",
       "mpg": 18,
       "city": 16,
@@ -1359,44 +1534,560 @@
       }
     },
     {
-      "id": "prius-2013",
-      "year": 2013,
-      "make": "Toyota",
-      "model": "Prius",
-      "trim": "Two FWD \u00b7 efficiency reference",
-      "engine": "1.8 L hybrid / eCVT",
-      "fuel": "Hybrid",
-      "drivetrain": "Front-Wheel Drive",
-      "mpg": 48,
-      "city": 49,
-      "highway": 46,
-      "epaId": "33324",
-      "epaModel": "Prius",
-      "epaTransmission": "Automatic (variable gear ratios)",
-      "clearance": 5.3,
-      "approach": null,
-      "departure": null,
+      "id": "r1s",
+      "year": 2025,
+      "make": "Rivian",
+      "model": "R1S",
+      "trim": "Dual Large AWD \u00b7 20-in All-Terrain \u00b7 Highest",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 44.3622,
+      "epaRange": 289,
+      "fuelGrade": "Electricity",
+      "drivetrain": "4-Wheel Drive",
+      "mpg": 76,
+      "city": 82,
+      "highway": 70,
+      "epaId": "48742",
+      "epaModel": "R1S All-Terrain Dual Large (20in)",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 14.7,
+      "approach": 35.8,
+      "departure": 34.4,
       "breakover": null,
-      "wheelbase": 106.3,
-      "tireSize": "195/65R15",
+      "wheelbase": 121.1,
+      "tireSize": "275/65R20",
       "lowRange": false,
       "rearLocker": false,
       "frontLocker": false,
-      "notes": "Front-wheel-drive efficiency reference, not an AWD/4WD vehicle. Current EPA adjusted combined rating is 48 MPG; the original brochure stated 50. Published approach/departure angles not located. Choose Known dimensions to compare using clearance, tire diameter and wheelbase, or set missing angles to zero weight.",
-      "short": "2013 Prius FWD",
+      "notes": "Maximum off-road suspension geometry with all-terrain package. EPA efficiency is normal road-cycle testing, not driving at this ride height. Published breakover not located; estimate is optional. Clearance exceeds the fixed 13-inch scoring cap. Dual motor traction control is not a mechanical axle locker.",
+      "short": "R1S Dual A/T",
       "sources": {
         "geometry": [
-          "prius2013"
+          "r1s2025",
+          "r1sTires"
         ],
         "tires": [
-          "prius2013"
+          "r1sTires"
         ],
         "hardware": [
-          "prius2013"
+          "r1s2025"
         ],
         "mpg": {
-          "title": "EPA #33324: 2013 Prius, 1.8 L, Automatic (variable gear ratios)",
-          "url": "https://www.fueleconomy.gov/feg/noframes/33324.shtml"
+          "title": "EPA #48742: 2025 R1S All-Terrain Dual Large (20in),  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48742.shtml"
+        }
+      }
+    },
+    {
+      "id": "r1t",
+      "year": 2025,
+      "make": "Rivian",
+      "model": "R1T",
+      "trim": "Dual Large AWD \u00b7 20-in All-Terrain \u00b7 Highest",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 44.3622,
+      "epaRange": 289,
+      "fuelGrade": "Electricity",
+      "drivetrain": "4-Wheel Drive",
+      "mpg": 76,
+      "city": 82,
+      "highway": 70,
+      "epaId": "48752",
+      "epaModel": "R1T All-Terrain Dual Large (20in)",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 14.6,
+      "approach": 35.7,
+      "departure": 29.9,
+      "breakover": 26.3,
+      "wheelbase": 135.8,
+      "tireSize": "275/65R20",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Highest/Max off-road suspension setting. EPA road-cycle consumption is not consumption while raised. Clearance exceeds the fixed 13-inch score cap. No mechanical axle locker assumed.",
+      "short": "R1T Dual A/T",
+      "sources": {
+        "geometry": [
+          "r1t2025"
+        ],
+        "tires": [
+          "r1t2025"
+        ],
+        "hardware": [
+          "r1t2025"
+        ],
+        "mpg": {
+          "title": "EPA #48752: 2025 R1T All-Terrain Dual Large (20in),  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48752.shtml"
+        }
+      }
+    },
+    {
+      "id": "r2",
+      "year": 2027,
+      "make": "Rivian",
+      "model": "R2",
+      "trim": "Performance AWD \u00b7 20-in All-Terrain",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 34.0963,
+      "epaRange": 307,
+      "fuelGrade": "Electricity",
+      "drivetrain": "4-Wheel Drive",
+      "mpg": 99,
+      "city": 109,
+      "highway": 89,
+      "epaId": "50390",
+      "epaModel": "R2 Performance AWD (20in AT)",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 9.6,
+      "approach": 25,
+      "departure": 26,
+      "breakover": 20.6,
+      "wheelbase": 115.6,
+      "tireSize": "255/60R20",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Model year 2027, EPA-rated and listed in the current Rivian lineup. Rivian calls this SUV R2, not R2S. No production R2T pickup was found. Uses production specifications, not the earlier concept dimensions.",
+      "short": "R2 Performance",
+      "sources": {
+        "geometry": [
+          "r2",
+          "r2Tires"
+        ],
+        "tires": [
+          "r2Tires"
+        ],
+        "hardware": [
+          "r2"
+        ],
+        "mpg": {
+          "title": "EPA #50390: 2027 R2 Performance AWD (20in AT),  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/50390.shtml"
+        }
+      }
+    },
+    {
+      "id": "cybertruck",
+      "year": 2025,
+      "make": "Tesla",
+      "model": "Cybertruck",
+      "trim": "AWD \u00b7 20-in wheels \u00b7 Very High suspension",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 42.9059,
+      "epaRange": 325,
+      "fuelGrade": "Electricity",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 79,
+      "city": 85,
+      "highway": 72,
+      "epaId": "49123",
+      "epaModel": "Cybertruck AWD",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 14.03,
+      "approach": 36.6,
+      "departure": 24.7,
+      "breakover": 22.9,
+      "wheelbase": 143.11,
+      "tireSize": "285/65R20",
+      "lowRange": false,
+      "rearLocker": true,
+      "frontLocker": true,
+      "notes": "Very High off-road setting (25 mph limit in the cited guide), not the temporary Extract setting. Geometry follows Tesla off-road-guide v2024.14.3. EPA 2025 AWD rating groups wheel/tire options; not an all-terrain-specific test. EPA road consumption is not raised-mode trail consumption.",
+      "short": "Cybertruck AWD",
+      "sources": {
+        "geometry": [
+          "cybertruck",
+          "cyberTires"
+        ],
+        "tires": [
+          "cyberTires"
+        ],
+        "hardware": [
+          "cybertruck"
+        ],
+        "mpg": {
+          "title": "EPA #49123: 2025 Cybertruck AWD,  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/49123.shtml"
+        }
+      }
+    },
+    {
+      "id": "lightning-sr",
+      "year": 2025,
+      "make": "Ford",
+      "model": "F-150 Lightning",
+      "trim": "Pro AWD \u00b7 Standard Range \u00b7 18-in wheels",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 49.3643,
+      "epaRange": 240,
+      "fuelGrade": "Electricity",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 68,
+      "city": 76,
+      "highway": 61,
+      "epaId": "48707",
+      "epaModel": "F-150 Lightning 4WD SR",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 8.5,
+      "approach": 24.3,
+      "departure": 24,
+      "breakover": 17.6,
+      "wheelbase": 145.5,
+      "tireSize": "275/65R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "SuperCrew 5.5-ft bed. Geometry table is labeled preproduction estimates by Ford. EPA range/consumption match the named battery configuration. Optional rear e-locker package is not assumed.",
+      "short": "Lightning SR",
+      "sources": {
+        "geometry": [
+          "lightning",
+          "lightningTires"
+        ],
+        "tires": [
+          "lightningTires"
+        ],
+        "hardware": [
+          "lightning"
+        ],
+        "mpg": {
+          "title": "EPA #48707: 2025 F-150 Lightning 4WD SR,  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48707.shtml"
+        }
+      }
+    },
+    {
+      "id": "lightning-er",
+      "year": 2025,
+      "make": "Ford",
+      "model": "F-150 Lightning",
+      "trim": "Pro AWD \u00b7 Extended Range \u00b7 18-in wheels",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 47.9143,
+      "epaRange": 320,
+      "fuelGrade": "Electricity",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 70,
+      "city": 78,
+      "highway": 63,
+      "epaId": "48706",
+      "epaModel": "F-150 Lightning 4WD PRO ER1",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 8.5,
+      "approach": 24.3,
+      "departure": 24,
+      "breakover": 17.6,
+      "wheelbase": 145.5,
+      "tireSize": "275/65R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "SuperCrew 5.5-ft bed. Geometry table is labeled preproduction estimates by Ford. EPA range/consumption match the named battery configuration. Optional rear e-locker package is not assumed.",
+      "short": "Lightning ER",
+      "sources": {
+        "geometry": [
+          "lightning",
+          "lightningTires"
+        ],
+        "tires": [
+          "lightningTires"
+        ],
+        "hardware": [
+          "lightning"
+        ],
+        "mpg": {
+          "title": "EPA #48706: 2025 F-150 Lightning 4WD PRO ER1,  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48706.shtml"
+        }
+      }
+    },
+    {
+      "id": "ioniq5-xrt",
+      "year": 2025,
+      "make": "Hyundai",
+      "model": "IONIQ 5",
+      "trim": "XRT AWD \u00b7 18-in all-terrain tires",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 35.7633,
+      "epaRange": 259,
+      "fuelGrade": "Electricity",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 94,
+      "city": 103,
+      "highway": 85,
+      "epaId": "48712",
+      "epaModel": "Ioniq 5 AWD XRT",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 7,
+      "approach": 19.8,
+      "departure": 30,
+      "breakover": null,
+      "wheelbase": 118.1,
+      "tireSize": "235/60R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Factory XRT lift and bumpers; no aftermarket lift. Published manufacturer breakover not located, so estimated only if enabled.",
+      "short": "IONIQ 5 XRT",
+      "sources": {
+        "geometry": [
+          "ioniq",
+          "ioniqDimensions"
+        ],
+        "tires": [
+          "ioniq"
+        ],
+        "hardware": [
+          "ioniq"
+        ],
+        "mpg": {
+          "title": "EPA #48712: 2025 Ioniq 5 AWD XRT,  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48712.shtml"
+        }
+      }
+    },
+    {
+      "id": "solterra-2025",
+      "year": 2025,
+      "make": "Subaru",
+      "model": "Solterra",
+      "trim": "Premium AWD \u00b7 18-in wheels",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 32.0,
+      "epaRange": 227,
+      "fuelGrade": "Electricity",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 104,
+      "city": 114,
+      "highway": 94,
+      "epaId": "48762",
+      "epaModel": "Solterra AWD",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 8.3,
+      "approach": 17.7,
+      "departure": 25.4,
+      "breakover": 18.2,
+      "wheelbase": 112.2,
+      "tireSize": "235/60R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Factory Premium configuration. No low-range transfer case or mechanical axle lockers. Each model year uses its own EPA efficiency/range record; 2026 has a revised powertrain.",
+      "short": "2025 Solterra",
+      "sources": {
+        "geometry": [
+          "solterra2025"
+        ],
+        "tires": [
+          "solterra2025"
+        ],
+        "hardware": [
+          "solterra2025"
+        ],
+        "mpg": {
+          "title": "EPA #48762: 2025 Solterra AWD,  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48762.shtml"
+        }
+      }
+    },
+    {
+      "id": "solterra-2026",
+      "year": 2026,
+      "make": "Subaru",
+      "model": "Solterra",
+      "trim": "Premium AWD \u00b7 18-in wheels",
+      "engine": "Dual electric motors / single speed",
+      "fuel": "Electric",
+      "efficiencyUnit": "MPGe",
+      "kwhPer100Miles": 27.9567,
+      "epaRange": 288,
+      "fuelGrade": "Electricity",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 120,
+      "city": 131,
+      "highway": 109,
+      "epaId": "49982",
+      "epaModel": "Solterra AWD",
+      "epaTransmission": "Automatic (A1)",
+      "clearance": 8.3,
+      "approach": 17.7,
+      "departure": 25.4,
+      "breakover": 18.2,
+      "wheelbase": 112.2,
+      "tireSize": "235/60R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Factory Premium configuration. No low-range transfer case or mechanical axle lockers. Each model year uses its own EPA efficiency/range record; 2026 has a revised powertrain.",
+      "short": "2026 Solterra",
+      "sources": {
+        "geometry": [
+          "solterra2026"
+        ],
+        "tires": [
+          "solterraTires"
+        ],
+        "hardware": [
+          "solterra2026"
+        ],
+        "mpg": {
+          "title": "EPA #49982: 2026 Solterra AWD,  L, Automatic (A1)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/49982.shtml"
+        }
+      }
+    },
+    {
+      "id": "tacoma-2010",
+      "year": 2010,
+      "make": "Toyota",
+      "model": "Tacoma",
+      "trim": "Base 4WD \u00b7 Access Cab, 6-ft bed",
+      "engine": "4.0 L V6 / 5-speed automatic",
+      "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
+      "mpg": 18,
+      "city": 16,
+      "highway": 20,
+      "epaId": "29527",
+      "epaModel": "Tacoma 4WD",
+      "epaTransmission": "Automatic 5-spd",
+      "clearance": 9.4,
+      "approach": 35,
+      "departure": 26,
+      "breakover": 21,
+      "wheelbase": 127.8,
+      "tireSize": "245/75R16",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Access Cab, not Double Cab. Values follow the linked 2010 configuration-specific eBrochure (9.4-in clearance, 127.8-in wheelbase); some other catalogs differ. No TRD package or rear locker assumed.",
+      "short": "2010 Tacoma Access",
+      "sources": {
+        "geometry": [
+          "tacoma2010"
+        ],
+        "tires": [
+          "tacoma2010"
+        ],
+        "hardware": [
+          "tacoma2010"
+        ],
+        "mpg": {
+          "title": "EPA #29527: 2010 Tacoma 4WD, 4.0 L, Automatic 5-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/29527.shtml"
+        }
+      }
+    },
+    {
+      "id": "renegade",
+      "year": 2020,
+      "make": "Jeep",
+      "model": "Renegade",
+      "trim": "Trailhawk 4WD",
+      "engine": "1.3 L turbo / 9-speed automatic",
+      "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
+      "drivetrain": "All-Wheel Drive",
+      "mpg": 24,
+      "city": 22,
+      "highway": 27,
+      "epaId": "42044",
+      "epaModel": "Renegade Trailhawk 4WD",
+      "epaTransmission": "Automatic 9-spd",
+      "clearance": 8.7,
+      "approach": 30.5,
+      "departure": 34.3,
+      "breakover": 25.7,
+      "wheelbase": 101.2,
+      "tireSize": "215/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Factory Trailhawk with standard Falken WildPeak H/T tires. Active Drive Low uses the transmission first gear, not a two-speed low-range transfer case. No mechanical axle lockers.",
+      "short": "Renegade Trailhawk",
+      "sources": {
+        "geometry": [
+          "renegade"
+        ],
+        "tires": [
+          "renegade"
+        ],
+        "hardware": [
+          "renegade"
+        ],
+        "mpg": {
+          "title": "EPA #42044: 2020 Renegade Trailhawk 4WD, 1.3 L, Automatic 9-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/42044.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-raptor",
+      "year": 2022,
+      "make": "Ford",
+      "model": "Bronco Raptor",
+      "trim": "4-door 4WD \u00b7 factory 37-in tires",
+      "engine": "3.0 L twin-turbo V6 / 10-speed automatic",
+      "fuel": "Gasoline",
+      "efficiencyUnit": "MPG",
+      "kwhPer100Miles": null,
+      "epaRange": null,
+      "fuelGrade": "Regular Gasoline",
+      "drivetrain": "Part-time 4-Wheel Drive",
+      "mpg": 15,
+      "city": 15,
+      "highway": 16,
+      "epaId": "45332",
+      "epaModel": "Bronco Raptor 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 13.1,
+      "approach": 47.2,
+      "departure": 40.5,
+      "breakover": 30.8,
+      "wheelbase": 116.5,
+      "tireSize": "37x12.50R17",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": true,
+      "notes": "Factory Raptor, not an aftermarket conversion. Uses manufacturer launch technical sheet. Nominal flotation tire size is 37 inches; clearance is capped at 13 inches in this scoring model.",
+      "short": "Bronco Raptor",
+      "sources": {
+        "geometry": [
+          "broncoRaptor"
+        ],
+        "tires": [
+          "broncoRaptor"
+        ],
+        "hardware": [
+          "broncoRaptor"
+        ],
+        "mpg": {
+          "title": "EPA #45332: 2022 Bronco Raptor 4WD, 3.0 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/45332.shtml"
         }
       }
     }
