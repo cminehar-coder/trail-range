@@ -1,0 +1,37 @@
+const {chromium}=require('/Users/cooperminehart/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+const path=require('node:path');
+(async()=>{
+ await fs.mkdir('qa',{recursive:true});
+ const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+ const context=await browser.newContext({viewport:{width:1440,height:1080},acceptDownloads:true});
+ const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8765',{waitUntil:'networkidle'});
+ await page.waitForFunction(()=>window.TRAIL_RANGE);
+ const snapshot=()=>page.evaluate(()=>window.TRAIL_RANGE.snapshot());
+ const before=await snapshot();assert.equal(before.rows.length,21);assert.equal(before.frontier.length,7);
+ await page.screenshot({path:'qa/desktop.png',fullPage:true});
+ await page.locator('#number-clearance').fill('100');await page.locator('#number-clearance').dispatchEvent('input');
+ const changed=await snapshot();assert.notEqual(changed.rows[4].score,before.rows[4].score);assert.equal(changed.state.weights.clearance,100);
+ await page.reload({waitUntil:'networkidle'});assert.equal((await snapshot()).state.weights.clearance,100);
+ await page.locator('#reset-all').click();await page.locator('#estimates').uncheck();assert.equal((await snapshot()).rows.filter(v=>v.score!==null).length,17);
+ await page.locator('#number-breakover').fill('0');await page.locator('#number-breakover').dispatchEvent('input');assert.equal((await snapshot()).rows.filter(v=>v.score!==null).length,21);
+ await page.locator('#reset-all').click();await page.locator('#drive').selectOption('both');const both=await snapshot();assert.equal(both.rows.length,4);assert.ok(both.rows.every(v=>v.frontLocker&&v.rearLocker));
+ await page.locator('#fuel').selectOption('hybrid');assert.equal((await snapshot()).rows.length,0);assert.equal(await page.locator('#chart-empty').isVisible(),true);
+ await page.locator('#reset-all').click();for(const k of ['clearance','approach','departure','breakover','tire','wheelbase']){await page.locator('#number-'+k).fill('0');await page.locator('#number-'+k).dispatchEvent('input');}assert.equal((await snapshot()).frontier.length,0);assert.equal(await page.locator('#chart-empty').isVisible(),true);
+ await page.locator('#preset').selectOption('angles');const preset=await snapshot();assert.equal(preset.state.weights.approach,30);
+ await page.locator('[data-select="bronco-sasquatch-2"]').click();assert.equal((await snapshot()).state.selected,'bronco-sasquatch-2');await page.locator('#vehicle-detail summary').click();assert.ok(await page.locator('#vehicle-detail a').count()>0);
+ await page.locator('#frontier-only').check();assert.equal(await page.locator('#vehicle-table tr[data-id]').count(),(await snapshot()).frontier.length);
+ const dl=page.waitForEvent('download');await page.locator('#export').click();const download=await dl;const csv=await fs.readFile(await download.path(),'utf8');assert.match(csv,/normalized_weight_clearance/);assert.equal(csv.trim().split('\n').length,(await snapshot()).frontier.length+1);
+ await page.locator('#share').click();await page.waitForURL(/#scenario=/);const scenario=page.url();const other=await context.newPage();await other.goto(scenario,{waitUntil:'networkidle'});assert.equal(await other.evaluate(()=>window.TRAIL_RANGE.snapshot().state.weights.approach),30);await other.close();
+ await page.locator('#reset-all').click();await page.setViewportSize({width:390,height:844});await page.screenshot({path:'qa/mobile.png',fullPage:true});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+ await page.setViewportSize({width:320,height:740});await page.screenshot({path:'qa/narrow.png',fullPage:true});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+ await page.setViewportSize({width:1440,height:1080});await page.locator('#reset-all').click();
+ // A source-linked detail is visible for an estimated point and for an exact point.
+ await page.locator('[data-select="rav4-hybrid"]').click();assert.match(await page.locator('#vehicle-detail').textContent(),/estimated from clearance/);
+ await page.locator('[data-select="crosstrek-wilderness"]').click();
+ assert.deepEqual(errors,[]);
+ await fs.writeFile('qa/results.json',JSON.stringify({passed:true,browserErrors:errors,checks:['weight reactivity','persistence','missing data policy','drivetrain filters','fuel filters','empty results','all-zero weights','presets','selection','source links','frontier-only','CSV','scenario URL','390px layout','320px layout']},null,2));
+ console.log('Browser checks passed: desktop/mobile, reactivity, edge cases, persistence, CSV and scenario links.');await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

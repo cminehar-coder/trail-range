@@ -1,0 +1,970 @@
+window.OFFROAD_DATA = {
+  "version": 1,
+  "updated": "2026-10-02",
+  "scope": "Selected stock U.S. configurations within model years 2015–2025. This seed dataset currently represents 2015, 2021, 2023 and 2024; it is not an exhaustive census or live sale inventory. Gasoline and conventional hybrids only.",
+  "sources": {
+    "rav4": {
+      "title": "Toyota 2024 RAV4 U.S. brochure",
+      "url": "https://www.toyota.com/content/dam/toyota/brochures/pdf/2024/rav4_ebrochure.pdf",
+      "location": "Capability and dimensions tables"
+    },
+    "crosstrek": {
+      "title": "Subaru 2024 Crosstrek Wilderness launch specifications",
+      "url": "https://www.prnewswire.com/news-releases/subaru-debuts-the-all-new-2024-crosstrek-wilderness-at-the-new-york-international-auto-show-301790484.html",
+      "location": "Crosstrek and Crosstrek Wilderness comparison table"
+    },
+    "forester": {
+      "title": "Subaru 2024 Forester Wilderness brochure",
+      "url": "https://www.subaru.com/content/dam/subaru/downloads/pdf/brochures/2024/2024_Forester_Wilderness_Brochure_050824.pdf#page=16",
+      "location": "Printed page 15, Dimensions"
+    },
+    "foresterTires": {
+      "title": "Subaru 2024 Forester at a glance",
+      "url": "https://s3.amazonaws.com/subarumedia.iconicweb.com/mediasite/attachments/24MY_Forester_-_AAG_-_FINALv3.pdf",
+      "location": "Wilderness equipment / tires"
+    },
+    "outback": {
+      "title": "Subaru 2024 Outback U.S. brochure",
+      "url": "https://www.subaru.com/content/dam/subaru/downloads/pdf/brochures/2024/MY24_Outback_Brochure.pdf#page=12",
+      "location": "Dimensions; footnote distinguishes non-XT and XT approach angles"
+    },
+    "bronco": {
+      "title": "Ford 2021 Bronco U.S. technical specifications",
+      "url": "https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/suvs-crossovers/bronco/2021/mediakit/21_Bronco_Prelim_Tech_Specs_1.pdf",
+      "location": "Two-door/four-door off-road capability and tire tables; archival Ford URL may redirect"
+    },
+    "broncoHardware": {
+      "title": "Ford 2021 Bronco equipment series",
+      "url": "https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/suvs-crossovers/bronco/2021/mediakit/21_Bronco_Trims_Sheet_1.pdf",
+      "location": "Base and Sasquatch package equipment"
+    },
+    "broncoSport": {
+      "title": "Ford 2021 Bronco Sport U.S. technical specifications",
+      "url": "https://media.ford.com/content/dam/fordmedia/North%20America/US/product/2021/bronco-sport/pdf/21MY-BroncoSport-Tech-Specs.pdf",
+      "location": "Exterior dimensions, standard versus optional tires; archival Ford URL may redirect"
+    },
+    "wrangler": {
+      "title": "Jeep 2023 Wrangler Product Information (manufacturer PDF, forum mirror)",
+      "url": "https://www.jlwranglerforums.com/forum/attachments/2023_jp_wrangler_sp-5-pdf.926938/",
+      "location": "Pages 2, 8–9: powertrain MPG, wheelbase, tire-specific clearances"
+    },
+    "4runner": {
+      "title": "Toyota 2015 4Runner U.S. brochure (manufacturer PDF, archive mirror)",
+      "url": "https://s3.amazonaws.com/cdn.autoipacket.com/brochures/toyota/2015/2015-toyota-4runner.pdf",
+      "location": "Trail specifications, dimensions and off-highway table"
+    },
+    "tacoma": {
+      "title": "Toyota 2024 Tacoma Product Information (manufacturer PDF, forum mirror)",
+      "url": "https://www.tacoma4g.com/forum/attachments/2024_toyota_tacoma_product_information-pdf.12235/",
+      "location": "Page 7: TRD Pro clearance/angles; departure without tow hitch"
+    },
+    "tacomaBrochure": {
+      "title": "Toyota 2024 Tacoma U.S. brochure",
+      "url": "https://www.toyota.com/content/dam/toyota/brochures/pdf/2024/tacoma_ebrochure.pdf",
+      "location": "TRD Pro wheels, hybrid powertrain, short-bed wheelbase"
+    },
+    "landcruiser": {
+      "title": "Toyota 2024 Land Cruiser U.S. launch specifications",
+      "url": "https://pressroom.toyota.com/the-evolution-of-a-legend-the-all-new-2024-land-cruiser/",
+      "location": "Angles, hybrid drivetrain, low range and locking differentials"
+    },
+    "landcruiserDimensions": {
+      "title": "Toyota 2024 Land Cruiser U.S. press release (manufacturer PDF, media mirror)",
+      "url": "https://cdn.motor1.com/pdf-files/2024-toyota-land-cruiser-press-release-2.pdf",
+      "location": "Land Cruiser grade dimensions and tires, not 1958 grade"
+    }
+  },
+  "vehicles": [
+    {
+      "id": "rav4-hybrid",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "RAV4",
+      "trim": "Hybrid LE AWD",
+      "engine": "2.5 L hybrid / eCVT",
+      "fuel": "Hybrid",
+      "mpg": 39,
+      "city": 41,
+      "highway": 38,
+      "epaId": "47392",
+      "epaModel": "RAV4 Hybrid AWD",
+      "epaTransmission": "Automatic (AV-S6)",
+      "clearance": 8.1,
+      "approach": 19,
+      "departure": 21,
+      "breakover": null,
+      "wheelbase": 105.9,
+      "tireSize": "225/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Published breakover not located. Electric rear axle; no low range. EPA current combined rating is 39, rather than the older 40 MPG figure.",
+      "short": "RAV4 Hybrid LE",
+      "sources": {
+        "geometry": [
+          "rav4"
+        ],
+        "tires": [
+          {
+            "title": "Firestone: 2024 RAV4 original tire sizes by trim",
+            "url": "https://vehicle.firestonecompleteautocare.com/toyota/rav4/2024/",
+            "location": "Original tire-size table; exact trim as listed above"
+          }
+        ],
+        "hardware": [
+          "rav4"
+        ],
+        "mpg": {
+          "title": "EPA #47392: 2024 RAV4 Hybrid AWD, 2.5 L, Automatic (AV-S6)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47392.shtml"
+        }
+      }
+    },
+    {
+      "id": "rav4-woodland",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "RAV4",
+      "trim": "Hybrid Woodland AWD",
+      "engine": "2.5 L hybrid / eCVT",
+      "fuel": "Hybrid",
+      "mpg": 37,
+      "city": 38,
+      "highway": 35,
+      "epaId": "47391",
+      "epaModel": "RAV4 Hybrid AWD Woodland Edition",
+      "epaTransmission": "Automatic (AV-S6)",
+      "clearance": 8.1,
+      "approach": 19,
+      "departure": 21,
+      "breakover": null,
+      "wheelbase": 105.9,
+      "tireSize": "225/60R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Factory all-terrain tires and TRD-tuned suspension. Those traction differences are not captured by this geometry-only score. Published breakover not located.",
+      "short": "RAV4 Woodland",
+      "sources": {
+        "geometry": [
+          "rav4"
+        ],
+        "tires": [
+          {
+            "title": "Firestone: 2024 RAV4 original tire sizes by trim",
+            "url": "https://vehicle.firestonecompleteautocare.com/toyota/rav4/2024/",
+            "location": "Original tire-size table; exact trim as listed above"
+          }
+        ],
+        "hardware": [
+          "rav4"
+        ],
+        "mpg": {
+          "title": "EPA #47391: 2024 RAV4 Hybrid AWD Woodland Edition, 2.5 L, Automatic (AV-S6)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47391.shtml"
+        }
+      }
+    },
+    {
+      "id": "rav4-trd",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "RAV4",
+      "trim": "TRD Off-Road AWD",
+      "engine": "2.5 L / 8-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 28,
+      "city": 25,
+      "highway": 32,
+      "epaId": "47389",
+      "epaModel": "RAV4 AWD TRD OFFROAD",
+      "epaTransmission": "Automatic (S8)",
+      "clearance": 8.6,
+      "approach": 19,
+      "departure": 21,
+      "breakover": null,
+      "wheelbase": 105.9,
+      "tireSize": "225/60R18",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Torque-vectoring rear AWD; no low range or mechanical axle lockers. Published breakover not located.",
+      "short": "RAV4 TRD Off-Road",
+      "sources": {
+        "geometry": [
+          "rav4"
+        ],
+        "tires": [
+          {
+            "title": "Firestone: 2024 RAV4 original tire sizes by trim",
+            "url": "https://vehicle.firestonecompleteautocare.com/toyota/rav4/2024/",
+            "location": "Original tire-size table; exact trim as listed above"
+          }
+        ],
+        "hardware": [
+          "rav4"
+        ],
+        "mpg": {
+          "title": "EPA #47389: 2024 RAV4 AWD TRD OFFROAD, 2.5 L, Automatic (S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47389.shtml"
+        }
+      }
+    },
+    {
+      "id": "crosstrek-base",
+      "year": 2024,
+      "make": "Subaru",
+      "model": "Crosstrek",
+      "trim": "Base AWD",
+      "engine": "2.0 L / CVT",
+      "fuel": "Gasoline",
+      "mpg": 29,
+      "city": 27,
+      "highway": 34,
+      "epaId": "46540",
+      "epaModel": "Crosstrek AWD",
+      "epaTransmission": "Automatic (AV-S8)",
+      "clearance": 8.7,
+      "approach": 18,
+      "departure": 30.1,
+      "breakover": 19.7,
+      "wheelbase": 105.1,
+      "tireSize": "225/60R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "",
+      "short": "Crosstrek Base",
+      "sources": {
+        "geometry": [
+          "crosstrek"
+        ],
+        "tires": [
+          {
+            "title": "Tire Rack: 2024 Crosstrek Base original tire fitment",
+            "url": "https://www.tirerack.com/tires/TireSearchResults.jsp?autoMake=Subaru&autoModClar=Base&autoModel=Crosstrek&autoYear=2024&diameter=17&filtering=true&ratio=60&sortCode=49751&width=225%2F",
+            "location": "225/60R17 original size"
+          }
+        ],
+        "hardware": [
+          "crosstrek"
+        ],
+        "mpg": {
+          "title": "EPA #46540: 2024 Crosstrek AWD, 2.0 L, Automatic (AV-S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/46540.shtml"
+        }
+      }
+    },
+    {
+      "id": "crosstrek-wilderness",
+      "year": 2024,
+      "make": "Subaru",
+      "model": "Crosstrek",
+      "trim": "Wilderness AWD",
+      "engine": "2.5 L / CVT",
+      "fuel": "Gasoline",
+      "mpg": 27,
+      "city": 25,
+      "highway": 29,
+      "epaId": "47162",
+      "epaModel": "Crosstrek Wilderness AWD",
+      "epaTransmission": "Automatic (AV-S8)",
+      "clearance": 9.3,
+      "approach": 20,
+      "departure": 33,
+      "breakover": 21.1,
+      "wheelbase": 104.9,
+      "tireSize": "225/60R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Dual-mode X-MODE and all-terrain tires. No low-range transfer case.",
+      "short": "Crosstrek Wilderness",
+      "sources": {
+        "geometry": [
+          "crosstrek"
+        ],
+        "tires": [
+          {
+            "title": "2024 Subaru Crosstrek Wilderness AWD: original-size tire fitment",
+            "url": "https://www.goodyear.com/en-us/vehicles/Subaru/Crosstrek/2024/Wilderness",
+            "location": "Cross-check original fitment; dimension score uses nominal sidewall size, not measured loaded diameter"
+          }
+        ],
+        "hardware": [
+          "crosstrek"
+        ],
+        "mpg": {
+          "title": "EPA #47162: 2024 Crosstrek Wilderness AWD, 2.5 L, Automatic (AV-S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47162.shtml"
+        }
+      }
+    },
+    {
+      "id": "forester-wilderness",
+      "year": 2024,
+      "make": "Subaru",
+      "model": "Forester",
+      "trim": "Wilderness AWD",
+      "engine": "2.5 L / CVT",
+      "fuel": "Gasoline",
+      "mpg": 26,
+      "city": 25,
+      "highway": 28,
+      "epaId": "47163",
+      "epaModel": "Forester Wilderness AWD",
+      "epaTransmission": "Automatic (AV-S8)",
+      "clearance": 9.2,
+      "approach": 23.5,
+      "departure": 25.4,
+      "breakover": 21,
+      "wheelbase": 104.9,
+      "tireSize": "225/60R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Dual-mode X-MODE and all-terrain tires. No low-range transfer case.",
+      "short": "Forester Wilderness",
+      "sources": {
+        "geometry": [
+          "forester"
+        ],
+        "tires": [
+          "foresterTires"
+        ],
+        "hardware": [
+          "forester"
+        ],
+        "mpg": {
+          "title": "EPA #47163: 2024 Forester Wilderness AWD, 2.5 L, Automatic (AV-S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47163.shtml"
+        }
+      }
+    },
+    {
+      "id": "outback-base",
+      "year": 2024,
+      "make": "Subaru",
+      "model": "Outback",
+      "trim": "Base AWD",
+      "engine": "2.5 L / CVT",
+      "fuel": "Gasoline",
+      "mpg": 28,
+      "city": 26,
+      "highway": 32,
+      "epaId": "46541",
+      "epaModel": "Outback AWD",
+      "epaTransmission": "Automatic (AV-S8)",
+      "clearance": 8.7,
+      "approach": 18,
+      "departure": 21.7,
+      "breakover": 19.4,
+      "wheelbase": 108.1,
+      "tireSize": "225/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "",
+      "short": "Outback Base",
+      "sources": {
+        "geometry": [
+          "outback"
+        ],
+        "tires": [
+          {
+            "title": "2024 Subaru Outback Base AWD: original-size tire fitment",
+            "url": "https://www.goodyear.com/en-us/vehicles/Subaru/Outback/2024/Standard",
+            "location": "Cross-check original fitment; dimension score uses nominal sidewall size, not measured loaded diameter"
+          }
+        ],
+        "hardware": [
+          "outback"
+        ],
+        "mpg": {
+          "title": "EPA #46541: 2024 Outback AWD, 2.5 L, Automatic (AV-S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/46541.shtml"
+        }
+      }
+    },
+    {
+      "id": "outback-wilderness",
+      "year": 2024,
+      "make": "Subaru",
+      "model": "Outback",
+      "trim": "Wilderness AWD",
+      "engine": "2.4 L turbo / CVT",
+      "fuel": "Gasoline",
+      "mpg": 23,
+      "city": 21,
+      "highway": 26,
+      "epaId": "46543",
+      "epaModel": "Outback Wilderness AWD",
+      "epaTransmission": "Automatic (AV-S8)",
+      "clearance": 9.5,
+      "approach": 20,
+      "departure": 23.6,
+      "breakover": 21.2,
+      "wheelbase": 108.1,
+      "tireSize": "225/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "2024 front/rear bumper geometry; no low-range transfer case.",
+      "short": "Outback Wilderness",
+      "sources": {
+        "geometry": [
+          "outback"
+        ],
+        "tires": [
+          {
+            "title": "2024 Subaru Outback Wilderness AWD: original-size tire fitment",
+            "url": "https://www.goodyear.com/en-us/vehicles/Subaru/Outback/2024/Wilderness",
+            "location": "Cross-check original fitment; dimension score uses nominal sidewall size, not measured loaded diameter"
+          }
+        ],
+        "hardware": [
+          "outback"
+        ],
+        "mpg": {
+          "title": "EPA #46543: 2024 Outback Wilderness AWD, 2.4 L, Automatic (AV-S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/46543.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-base-2",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Bronco",
+      "trim": "Base · 2-door",
+      "engine": "2.3 L turbo / 10-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 21,
+      "city": 20,
+      "highway": 22,
+      "epaId": "43995",
+      "epaModel": "Bronco 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 8.4,
+      "approach": 35.5,
+      "departure": 29.8,
+      "breakover": 21.1,
+      "wheelbase": 100.4,
+      "tireSize": "255/70R16",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard tires and suspension. EPA entry groups body styles; MPG is the configuration-group rating, not a separate body-style test.",
+      "short": "Bronco Base 2D",
+      "sources": {
+        "geometry": [
+          "bronco"
+        ],
+        "tires": [
+          "bronco"
+        ],
+        "hardware": [
+          "broncoHardware"
+        ],
+        "mpg": {
+          "title": "EPA #43995: 2021 Bronco 4WD, 2.3 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/43995.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-base-4",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Bronco",
+      "trim": "Base · 4-door",
+      "engine": "2.3 L turbo / 10-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 21,
+      "city": 20,
+      "highway": 22,
+      "epaId": "43995",
+      "epaModel": "Bronco 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 8.3,
+      "approach": 35.5,
+      "departure": 29.7,
+      "breakover": 20.0,
+      "wheelbase": 116.1,
+      "tireSize": "255/70R16",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard tires and suspension. EPA entry groups body styles; MPG is the configuration-group rating, not a separate body-style test.",
+      "short": "Bronco Base 4D",
+      "sources": {
+        "geometry": [
+          "bronco"
+        ],
+        "tires": [
+          "bronco"
+        ],
+        "hardware": [
+          "broncoHardware"
+        ],
+        "mpg": {
+          "title": "EPA #43995: 2021 Bronco 4WD, 2.3 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/43995.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-sasquatch-2",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Bronco",
+      "trim": "Base Sasquatch · 2-door",
+      "engine": "2.3 L turbo / 10-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 18,
+      "city": 18,
+      "highway": 18,
+      "epaId": "44002",
+      "epaModel": "Bronco Sasquatch 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 11.6,
+      "approach": 43.2,
+      "departure": 37.2,
+      "breakover": 29,
+      "wheelbase": 100.4,
+      "tireSize": "315/70R17",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": true,
+      "notes": "Factory Sasquatch package; no Badlands sway-bar disconnect assumed. EPA groups body styles. Nominal tire diameter is calculated from the sidewall size, not the rounded 35-inch marketing label.",
+      "short": "Bronco Sasquatch 2D",
+      "sources": {
+        "geometry": [
+          "bronco"
+        ],
+        "tires": [
+          "bronco"
+        ],
+        "hardware": [
+          "broncoHardware"
+        ],
+        "mpg": {
+          "title": "EPA #44002: 2021 Bronco Sasquatch 4WD, 2.3 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/44002.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-sasquatch-4",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Bronco",
+      "trim": "Base Sasquatch · 4-door",
+      "engine": "2.3 L turbo / 10-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 18,
+      "city": 18,
+      "highway": 18,
+      "epaId": "44002",
+      "epaModel": "Bronco Sasquatch 4WD",
+      "epaTransmission": "Automatic (S10)",
+      "clearance": 11.5,
+      "approach": 43.2,
+      "departure": 37,
+      "breakover": 26.3,
+      "wheelbase": 116.1,
+      "tireSize": "315/70R17",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": true,
+      "notes": "Factory Sasquatch package; no Badlands sway-bar disconnect assumed. EPA groups body styles. Nominal tire diameter is calculated from the sidewall size, not the rounded 35-inch marketing label.",
+      "short": "Bronco Sasquatch 4D",
+      "sources": {
+        "geometry": [
+          "bronco"
+        ],
+        "tires": [
+          "bronco"
+        ],
+        "hardware": [
+          "broncoHardware"
+        ],
+        "mpg": {
+          "title": "EPA #44002: 2021 Bronco Sasquatch 4WD, 2.3 L, Automatic (S10)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/44002.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-sport-base",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Bronco Sport",
+      "trim": "Base AWD",
+      "engine": "1.5 L turbo / 8-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 26,
+      "city": 25,
+      "highway": 28,
+      "epaId": "43543",
+      "epaModel": "Bronco Sport 4WD",
+      "epaTransmission": "Automatic 8-spd",
+      "clearance": 7.8,
+      "approach": 21.7,
+      "departure": 30.4,
+      "breakover": 18.2,
+      "wheelbase": 105.1,
+      "tireSize": "225/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "",
+      "short": "Bronco Sport Base",
+      "sources": {
+        "geometry": [
+          "broncoSport"
+        ],
+        "tires": [
+          "broncoSport"
+        ],
+        "hardware": [
+          "broncoSport"
+        ],
+        "mpg": {
+          "title": "EPA #43543: 2021 Bronco Sport 4WD, 1.5 L, Automatic 8-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/43543.shtml"
+        }
+      }
+    },
+    {
+      "id": "bronco-sport-badlands",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Bronco Sport",
+      "trim": "Badlands · optional A/T tires",
+      "engine": "2.0 L turbo / 8-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 23,
+      "city": 21,
+      "highway": 26,
+      "epaId": "43544",
+      "epaModel": "Bronco Sport 4WD",
+      "epaTransmission": "Automatic (S8)",
+      "clearance": 8.8,
+      "approach": 30.4,
+      "departure": 33.1,
+      "breakover": 20.4,
+      "wheelbase": 105.1,
+      "tireSize": "235/65R17",
+      "lowRange": false,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Optional 235/65R17 package is required for these dimensions. Twin-clutch rear drive is not counted as a mechanical rear locker; no low range. EPA does not separately rate this tire option.",
+      "short": "Bronco Sport Badlands",
+      "sources": {
+        "geometry": [
+          "broncoSport"
+        ],
+        "tires": [
+          "broncoSport"
+        ],
+        "hardware": [
+          "broncoSport"
+        ],
+        "mpg": {
+          "title": "EPA #43544: 2021 Bronco Sport 4WD, 2.0 L, Automatic (S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/43544.shtml"
+        }
+      }
+    },
+    {
+      "id": "wrangler-rubicon-2",
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Rubicon · 2-door",
+      "engine": "3.6 L V6 / 6-speed manual",
+      "fuel": "Gasoline",
+      "mpg": 20,
+      "city": 17,
+      "highway": 25,
+      "epaId": "45693",
+      "epaModel": "Wrangler 2dr 4WD",
+      "epaTransmission": "Manual 6-spd",
+      "clearance": 10.8,
+      "approach": 44,
+      "departure": 37,
+      "breakover": 27.8,
+      "wheelbase": 96.8,
+      "tireSize": "285/70R17",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": true,
+      "notes": "Standard 33-inch-class tires; excludes Xtreme Recon and 392. EPA powertrain/body-style entry does not separately name Rubicon. Model-year manufacturer sheet lists this engine/transmission rating.",
+      "short": "Wrangler Rubicon 2D",
+      "sources": {
+        "geometry": [
+          "wrangler"
+        ],
+        "tires": [
+          "wrangler"
+        ],
+        "hardware": [
+          "wrangler"
+        ],
+        "mpg": {
+          "title": "EPA #45693: 2023 Wrangler 2dr 4WD, 3.6 L, Manual 6-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/45693.shtml"
+        }
+      }
+    },
+    {
+      "id": "wrangler-rubicon-4",
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Rubicon · 4-door",
+      "engine": "3.6 L V6 / 6-speed manual",
+      "fuel": "Gasoline",
+      "mpg": 19,
+      "city": 17,
+      "highway": 23,
+      "epaId": "45696",
+      "epaModel": "Wrangler 4dr 4WD",
+      "epaTransmission": "Manual 6-spd",
+      "clearance": 10.8,
+      "approach": 43.9,
+      "departure": 37,
+      "breakover": 22.6,
+      "wheelbase": 118.4,
+      "tireSize": "285/70R17",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": true,
+      "notes": "Standard 33-inch-class tires; excludes Xtreme Recon and 392. EPA powertrain/body-style entry does not separately name Rubicon. Model-year manufacturer sheet lists this engine/transmission rating.",
+      "short": "Wrangler Rubicon 4D",
+      "sources": {
+        "geometry": [
+          "wrangler"
+        ],
+        "tires": [
+          "wrangler"
+        ],
+        "hardware": [
+          "wrangler"
+        ],
+        "mpg": {
+          "title": "EPA #45696: 2023 Wrangler 4dr 4WD, 3.6 L, Manual 6-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/45696.shtml"
+        }
+      }
+    },
+    {
+      "id": "wrangler-sport-2",
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport · 2-door",
+      "engine": "2.0 L turbo / 8-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 23,
+      "city": 22,
+      "highway": 24,
+      "epaId": "45691",
+      "epaModel": "Wrangler 2dr 4WD",
+      "epaTransmission": "Automatic 8-spd",
+      "clearance": 9.7,
+      "approach": 41.4,
+      "departure": 35.9,
+      "breakover": 25,
+      "wheelbase": 96.8,
+      "tireSize": "245/75R17",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard Sport geometry and tires; EPA powertrain/body-style group. No optional rear limited-slip differential assumed.",
+      "short": "Wrangler Sport 2D",
+      "sources": {
+        "geometry": [
+          "wrangler"
+        ],
+        "tires": [
+          "wrangler"
+        ],
+        "hardware": [
+          "wrangler"
+        ],
+        "mpg": {
+          "title": "EPA #45691: 2023 Wrangler 2dr 4WD, 2.0 L, Automatic 8-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/45691.shtml"
+        }
+      }
+    },
+    {
+      "id": "wrangler-sport-4",
+      "year": 2023,
+      "make": "Jeep",
+      "model": "Wrangler",
+      "trim": "Sport · 4-door",
+      "engine": "2.0 L turbo / 8-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 22,
+      "city": 21,
+      "highway": 24,
+      "epaId": "45694",
+      "epaModel": "Wrangler 4dr 4WD",
+      "epaTransmission": "Automatic 8-spd",
+      "clearance": 9.7,
+      "approach": 41.4,
+      "departure": 36.1,
+      "breakover": 20.3,
+      "wheelbase": 118.4,
+      "tireSize": "245/75R17",
+      "lowRange": true,
+      "rearLocker": false,
+      "frontLocker": false,
+      "notes": "Standard Sport geometry and tires; EPA powertrain/body-style group. No optional rear limited-slip differential assumed.",
+      "short": "Wrangler Sport 4D",
+      "sources": {
+        "geometry": [
+          "wrangler"
+        ],
+        "tires": [
+          "wrangler"
+        ],
+        "hardware": [
+          "wrangler"
+        ],
+        "mpg": {
+          "title": "EPA #45694: 2023 Wrangler 4dr 4WD, 2.0 L, Automatic 8-spd",
+          "url": "https://www.fueleconomy.gov/feg/noframes/45694.shtml"
+        }
+      }
+    },
+    {
+      "id": "4runner-trail",
+      "year": 2015,
+      "make": "Toyota",
+      "model": "4Runner",
+      "trim": "Trail 4WD",
+      "engine": "4.0 L V6 / 5-speed automatic",
+      "fuel": "Gasoline",
+      "mpg": 18,
+      "city": 17,
+      "highway": 21,
+      "epaId": "35595",
+      "epaModel": "4Runner 4WD",
+      "epaTransmission": "Automatic (S5)",
+      "clearance": 9.6,
+      "approach": 33,
+      "departure": 26,
+      "breakover": null,
+      "wheelbase": 109.8,
+      "tireSize": "265/70R17",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": false,
+      "notes": "Trail trim, standard suspension. Published breakover not located; optional KDSS is not assumed.",
+      "short": "4Runner Trail",
+      "sources": {
+        "geometry": [
+          "4runner"
+        ],
+        "tires": [
+          "4runner"
+        ],
+        "hardware": [
+          "4runner"
+        ],
+        "mpg": {
+          "title": "EPA #35595: 2015 4Runner 4WD, 4.0 L, Automatic (S5)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/35595.shtml"
+        }
+      }
+    },
+    {
+      "id": "tacoma-pro",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Tacoma",
+      "trim": "TRD Pro · Double Cab, 5-ft bed",
+      "engine": "2.4 L hybrid / 8-speed automatic",
+      "fuel": "Hybrid",
+      "mpg": 23,
+      "city": 22,
+      "highway": 24,
+      "epaId": "48461",
+      "epaModel": "Tacoma Hybrid 4WD",
+      "epaTransmission": "Automatic (S8)",
+      "clearance": 11.5,
+      "approach": 35.7,
+      "departure": 25.3,
+      "breakover": 27.4,
+      "wheelbase": 131.9,
+      "tireSize": "265/70R18",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": false,
+      "notes": "Manufacturer maximum TRD Pro running clearance. Departure specification is WITHOUT tow hitch; a hitch can reduce it. Dimensions are not directly identical in measurement convention to every other manufacturer.",
+      "short": "Tacoma TRD Pro",
+      "sources": {
+        "geometry": [
+          "tacoma",
+          "tacomaBrochure"
+        ],
+        "tires": [
+          "tacoma"
+        ],
+        "hardware": [
+          "tacoma"
+        ],
+        "mpg": {
+          "title": "EPA #48461: 2024 Tacoma Hybrid 4WD, 2.4 L, Automatic (S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/48461.shtml"
+        }
+      }
+    },
+    {
+      "id": "landcruiser",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "trim": "Land Cruiser grade · 18-in wheels",
+      "engine": "2.4 L hybrid / 8-speed automatic",
+      "fuel": "Hybrid",
+      "mpg": 23,
+      "city": 22,
+      "highway": 25,
+      "epaId": "47762",
+      "epaModel": "Land Cruiser",
+      "epaTransmission": "Automatic (S8)",
+      "clearance": 8.7,
+      "approach": 31,
+      "departure": 22,
+      "breakover": 25,
+      "wheelbase": 112.2,
+      "tireSize": "265/70R18",
+      "lowRange": true,
+      "rearLocker": true,
+      "frontLocker": false,
+      "notes": "Land Cruiser grade (not 1958), standard 18-inch wheels. Center and rear lockers plus stabilizer disconnect. Initial U.S. manufacturer specification sheet used for geometry.",
+      "short": "Land Cruiser",
+      "sources": {
+        "geometry": [
+          "landcruiser",
+          "landcruiserDimensions"
+        ],
+        "tires": [
+          "landcruiserDimensions"
+        ],
+        "hardware": [
+          "landcruiser"
+        ],
+        "mpg": {
+          "title": "EPA #47762: 2024 Land Cruiser, 2.4 L, Automatic (S8)",
+          "url": "https://www.fueleconomy.gov/feg/noframes/47762.shtml"
+        }
+      }
+    }
+  ]
+};
