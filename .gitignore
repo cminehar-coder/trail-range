@@ -3,3 +3,4 @@ node_modules/
 qa/
 dist/
 *.tar.gz
+.openai/
